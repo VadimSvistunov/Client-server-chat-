@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="526.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChatController">
+   <children>
+      <AnchorPane prefHeight="26.0" prefWidth="526.0" style="-fx-background-color: #353535;">
+         <children>
+            <Label contentDisplay="CENTER" layoutX="219.0" layoutY="1.0" prefHeight="24.0" prefWidth="89.0" text="VACHAT" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Georgia" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextArea fx:id="chatField" editable="false" layoutY="35.0" prefHeight="449.0" prefWidth="526.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="Georgia" size="14.0" />
+         </font>
+      </TextArea>
+      <TextField fx:id="messageField" layoutX="1.0" layoutY="490.0" prefHeight="37.0" prefWidth="456.0" AnchorPane.leftAnchor="1.0">
+         <font>
+            <Font name="Georgia" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="sendBut" layoutX="457.0" layoutY="490.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="37.0" prefWidth="68.0" style="-fx-background-color: #ffffff; -fx-border-color: #353535;" styleClass="btn_white" text="send" AnchorPane.rightAnchor="1.0">
+         <font>
+            <Font name="Georgia" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
